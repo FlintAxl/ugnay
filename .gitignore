@@ -1,0 +1,38 @@
+# Node
+node_modules/
+dist/
+build/
+.expo/
+*.log
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+env/
+*.egg-info/
+
+# Env
+.env
+.env.local
+.env.*.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Build artifacts
+apps/mobile/android/
+apps/mobile/ios/
+*.apk
+*.ipa
+
+# Models
+face-service/app/models/*.onnx
+ai-service/models/*.h5
+ai-service/models/*.pkl
