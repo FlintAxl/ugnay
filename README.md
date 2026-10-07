@@ -1,7 +1,12 @@
 # Ugnay — Cooperative System
+
+# RUN BACKEND
 cd apps/backend
 .\venv\Scripts\Activate.ps1
 python -m uvicorn app.main:app --reload --port 8000
+# RUN FRONTEND
+cd apps/mobile
+npx expo start
 
 Multi-role cooperative management system.
 
