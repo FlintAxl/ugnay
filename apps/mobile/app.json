@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "ugnay",
+    "name": "Ugnay",
     "slug": "ugnay",
     "scheme": "ugnay",
     "version": "1.0.0",
@@ -11,6 +11,8 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "com.ugnay.coop.mobile",
+      "permissions": ["CAMERA"],
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/android-icon-foreground.png",
@@ -25,7 +27,19 @@
     "plugins": [
       "expo-router",
       "expo-secure-store",
-      "expo-status-bar"
+      "expo-status-bar",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow Ugnay to access the camera for facial registration and identity verification."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow Ugnay to access your photos for profile verification."
+        }
+      ]
     ]
   }
 }
